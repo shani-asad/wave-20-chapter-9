@@ -1,0 +1,51 @@
+/* Background */
+
+.mainScreenOneGame {
+  background-color: #9c835f;
+  width: 100vw;
+  height: 100vh;
+}
+
+.textOnePageGame {
+  font-family: Bebas Neue;
+  font-weight: bolder;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 50px;
+}
+
+/* Navbar */
+
+.textNavGame {
+  color: #ffb548;
+  font-family: Bebas Neue;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.sizeNavItem {
+  width: 40px;
+  height: 40px;
+}
+
+/* Contents */
+
+.sizeItem {
+  width: 80px;
+  height: 75px;
+}
+
+.sizeItemTwo {
+  width: 70px;
+  height: 40px;
+}
+
+.positionItem {
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px;
+}
