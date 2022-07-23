@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import { Button, Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, Container, Row, Col, UncontrolledCarousel, Form, FormGroup, Input, Label } from "reactstrap";
+import { Button, Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, Container, Row, Col, UncontrolledCarousel, Form, FormGroup, Input, Label, Dropdown } from "reactstrap";
 import "./css/home.css";
+import scrollDown from "./svg/scroll down.svg";
+import fb from "./svg/facebook.svg";
+import twitter from "./svg/twitter.svg";
 
 class Home extends Component {
   render() {
@@ -58,7 +61,7 @@ class Home extends Component {
             <p>The Story</p>
           </div>
           <div className="scrollDownPadding">
-            <img className="scrollDownPadding" src="../public/assets/scroll down.svg" />
+            <img className="scrollDownPadding" src={scrollDown} />
           </div>
         </div>
         {/* Halaman Kedua */}
@@ -350,10 +353,10 @@ class Home extends Component {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Logo</NavLink>
+                    <NavLink href="#">{fb}</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Logo</NavLink>
+                    <NavLink href="#">{twitter}</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="#">Logo</NavLink>
