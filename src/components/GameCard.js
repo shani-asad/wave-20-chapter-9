@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Link } from "react-router-dom";
 import {
     CardGroup,
     Card,
@@ -26,7 +27,7 @@ class GameCard extends Component {
                         <CardImg alt="Card image cap" src="https://picsum.photos/318/180" top width="100%"/>
                         <CardBody>
                             <CardTitle tag="h5">
-                                Rock Paper Scissors
+                                Rock Scissor Paper
                             </CardTitle>
                             <CardSubtitle className="mb-2 text-danger" tag="h6">
                                 <Badge color="danger">
@@ -36,9 +37,11 @@ class GameCard extends Component {
                             <CardText>
                                 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                             </CardText>
-                            <Button color="primary">
-                                Game Detail
-                            </Button>
+                            <Link to="/game/detail/rock-scissor-paper">
+                                <Button color="primary">
+                                    Game Detail
+                                </Button>
+                            </Link>
                         </CardBody>
                     </Card>
                     <Card>
