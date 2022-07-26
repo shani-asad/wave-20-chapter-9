@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Form, Label, Input, FormGroup, Button, Container, Row, Col } from "reactstrap";
-import "./css/signup.css";
+import "../css/signup.css";
 
 class Signup extends Component {
   render() {
@@ -22,6 +22,12 @@ class Signup extends Component {
                     <Input id="exampleName" name="name" placeholder="Reactono" type="name" />
                   </FormGroup>
                   <FormGroup className="mb-2 me-sm-2 mb-sm-2">
+                    <Label className="me-sm-2" for="exampleBirthDate">
+                      Birth Date
+                    </Label>
+                    <Input id="exampleBirthDate" name="country" placeholder="25/07/1945" type="birthDate" />
+                  </FormGroup>
+                  <FormGroup className="mb-2 me-sm-2 mb-sm-2">
                     <Label className="me-sm-2" for="exampleCountry">
                       Country
                     </Label>
@@ -40,7 +46,7 @@ class Signup extends Component {
                     <Input id="examplePassword" name="password" placeholder="don't tell!" type="password" />
                   </FormGroup>
                   <p></p>
-                  <Button className="">Sign Up</Button>
+                  <Button className="">Submit</Button>
                 </Form>
               </Col>
             </div>

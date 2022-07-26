@@ -1,67 +1,26 @@
 import React, { Component } from "react";
-import { Button, Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, Container, Row, Col, UncontrolledCarousel, Form, FormGroup, Input, Label, Dropdown } from "reactstrap";
-import "./css/home.css";
-import scrollDown from "./svg/scroll down.svg";
-import fb from "./svg/facebook.svg";
-import twitter from "./svg/twitter.svg";
+import { Button, Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, Container, Row, Col, UncontrolledCarousel, Form, FormGroup, Input, Label, Dropdown, Media } from "reactstrap";
+import { Link } from "react-router-dom";
+import "../css/home.css";
 
 class Home extends Component {
   render() {
     return (
       <div className="mainScreenOne">
-        {/* Navbar */}
-        <div>
-          <Navbar color="dark" expand="md" className="navHeader">
-            <NavbarBrand className="navTextColor navFontText navFontSizeLogo ms-3 mx-5" href="/">
-              Game
-            </NavbarBrand>
-            <NavbarToggler onClick={function noRefCheck() {}} />
-            <Collapse navbar>
-              <Nav className="me-auto" navbar>
-                <NavItem>
-                  <NavLink className="navTextColor navFontText navFontSize mx-3" href="#">
-                    Home
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="navTextColor navFontText navFontSize mx-3" href="#">
-                    Work
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="navTextColor navFontText navFontSize mx-3" href="#">
-                    Contact
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="navTextColor navFontText navFontSize mx-3" href="#">
-                    About Me
-                  </NavLink>
-                </NavItem>
-              </Nav>
-              <NavLink className="navTextColor navFontText navFontSize mx-3" href="#">
-                Sign In
-              </NavLink>
-              <NavLink className="navTextColor navFontText navFontSize me-5" href="#">
-                Sign Up
-              </NavLink>
-            </Collapse>
-          </Navbar>
-        </div>
         {/* Halaman Pertama*/}
         <div>
           <p className="me-auto textOnePageOne pageOnePadding">PLAY TRADITIONAL GAME</p>
           <p className="textTwoPageOne">Experience new traditional game play</p>
           <div className="buttonPageOne">
             <Button className="textButtonPageOne" size="lg" color="warning">
-              Play Now
+              <Link to="/game">Play Now</Link>
             </Button>
           </div>
           <div className="scrollDown">
             <p>The Story</p>
           </div>
           <div className="scrollDownPadding">
-            <img className="scrollDownPadding" src={scrollDown} />
+            <Media className="scrollDownPadding" src="./assets/scroll down.svg" />
           </div>
         </div>
         {/* Halaman Kedua */}
@@ -210,10 +169,13 @@ class Home extends Component {
                   <Row>
                     <Col className="">
                       <div className="boxFour" />
-                      <img className="sizePhoto" src="./assets/image1.jpg" />
+                      <Media className="sizePhoto" src="./assets/image1.jpg" />
                     </Col>
                     <Col className="marginTwoPageFive">
                       <p className="textThreePageFive">Evan Lahti</p>
+                      <div className="logoBox">
+                        <Media src="./assets/twitter.svg" alt />
+                      </div>
                       <p className="textFourPageFive marginOnePageFive">PC Gamer</p>
                     </Col>
                   </Row>
@@ -245,7 +207,7 @@ class Home extends Component {
                   <Row>
                     <Col className="">
                       <div className="boxFour" />
-                      <img className="sizePhoto" src="./assets/image2.jpg" />
+                      <Media className="sizePhoto" src="./assets/image2.jpg" />
                     </Col>
                     <Col className="marginTwoPageFive">
                       <p className="textThreePageFive">Jada Griffin </p>
@@ -272,7 +234,7 @@ class Home extends Component {
                   <Row>
                     <Col className="">
                       <div className="boxFour" />
-                      <img className="sizePhoto" src="./assets/image3.jpg" />
+                      <Media className="sizePhoto" src="./assets/image3.jpg" />
                     </Col>
                     <Col className="marginTwoPageFive">
                       <p className="textThreePageFive">Aaron Williams</p>
@@ -299,7 +261,7 @@ class Home extends Component {
           <Container>
             <Row>
               <Col className="">
-                <img src="./assets/image.png" alt="" />
+                <Media src="./assets/image.png" alt="" />
               </Col>
               <Col className="">
                 <p className="textOnePageSix">
@@ -353,16 +315,24 @@ class Home extends Component {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">{fb}</NavLink>
+                    <NavLink href="#">
+                      <Media src="./assets/facebook.svg" alt />
+                    </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">{twitter}</NavLink>
+                    <NavLink href="#">
+                      <Media src="./assets/twitter.svg" alt />
+                    </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Logo</NavLink>
+                    <NavLink href="#">
+                      <Media src="./assets/Vector.svg" alt />
+                    </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Logo</NavLink>
+                    <NavLink href="#">
+                      <Media src="./assets/twitch.svg" alt />
+                    </NavLink>
                   </NavItem>
                 </Nav>
               </Col>

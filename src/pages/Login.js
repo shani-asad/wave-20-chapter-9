@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Label, Input, FormGroup, Button, Container, Row, Col } from "reactstrap";
-import "./css/login.css";
+import { Link } from "react-router-dom";
+import "../css/login.css";
 
 class Login extends Component {
   render() {
@@ -29,7 +30,9 @@ class Login extends Component {
                   </FormGroup>
                   <p></p>
                   <Button className="">Submit</Button>
-                  <Button className="ms-2">Sign Up</Button>
+                  <Button className="ms-2">
+                    <Link to="/signup">Sign Up</Link>
+                  </Button>
                 </Form>
               </Col>
             </div>
