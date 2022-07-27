@@ -37,13 +37,13 @@ class Game extends Component {
           {/* Baris 2 */}
           <Row className="positionItem">
             <Col className=""></Col>
-            <Col className="">
+            <Col className="batu" id="play-batu">
               <a href="#">
                 <img className="sizeItem" src="./assets/batu.png" alt="batu" />
               </a>
             </Col>
             <Col className=""></Col>
-            <Col className="">
+            <Col className="" id="com-batu">
               <a href="#">
                 <img className="sizeItem" src="./assets/batu.png" alt="batu" />
               </a>
@@ -53,15 +53,15 @@ class Game extends Component {
           {/* Baris 3 */}
           <Row className="positionItem">
             <Col className=""></Col>
-            <Col className="">
+            <Col className="" id="play-kertas">
               <a href="#">
                 <img className="sizeItem" src="./assets/kertas.png" alt="kertas" />
               </a>
             </Col>
-            <Col className="">
+            <Col className="" id="vs">
               <img className="sizeItemTwo" src="./assets/VS.png" alt="VS" />
             </Col>
-            <Col className="">
+            <Col className="" id="com-kertas">
               <a href="#">
                 <img className="sizeItem" src="./assets/kertas.png" alt="kertas" />
               </a>
@@ -71,13 +71,13 @@ class Game extends Component {
           {/* Baris 4 */}
           <Row className="positionItem">
             <Col className=""></Col>
-            <Col className="">
+            <Col className="" id="play-gunting">
               <a href="#">
                 <img className="sizeItem" src="./assets/gunting.png" alt="gunting" />
               </a>
             </Col>
             <Col className=""></Col>
-            <Col className="">
+            <Col className="" id="com-gunting">
               <a href="#">
                 <img className="sizeItem" src="./assets/gunting.png" alt="gunting" />
               </a>
@@ -88,7 +88,7 @@ class Game extends Component {
           <Row className="positionItem">
             <Col className=""></Col>
             <Col className=""></Col>
-            <Col className="">
+            <Col className="" id="refresh">
               <img className="" src="./assets/refresh.png" alt="refresh" />
             </Col>
             <Col className=""></Col>
