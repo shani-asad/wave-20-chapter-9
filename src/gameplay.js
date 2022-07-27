@@ -23,7 +23,7 @@ refresh.addEventListener("click", () => {
 
 const comTurn = () => {
     comMove = Math.floor(Math.random() * 3)
-    comChoice = document.getElementById(com-${comMove})
+    comChoice = document.getElementById(com-$, {comMove})
 }
 
 comTurn()
