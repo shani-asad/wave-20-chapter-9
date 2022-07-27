@@ -9,10 +9,11 @@
 .boxSignup {
   background-color: grey;
   width: 320px;
-  height: 450px;
+  height: 500px;
   padding: 20px;
   border-radius: 5%;
   opacity: 75%;
+  margin-top: -30px;
 }
 
 orText {
