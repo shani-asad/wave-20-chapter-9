@@ -13,7 +13,7 @@ import '../css/game.detail.css';
 
 class GameCardDetail extends Component {
     state = {isAuthenticated: false}
-    componentWillUnmount(){ this.checkUser() }
+    componentWillMount(){ this.checkUser() }
 
     // req ke server
     checkUser = () => {
@@ -24,7 +24,7 @@ class GameCardDetail extends Component {
     }
 
     render() {
-        const { isAuthenticated } = this.props
+        const { isAuthenticated } = this.state
         let button;
 
         if (!isAuthenticated) {
