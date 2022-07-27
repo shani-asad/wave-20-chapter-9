@@ -3,6 +3,7 @@ import { Col, Container, Row, Media } from "reactstrap";
 import GameCardDetail from "../components/GameCardDetail";
 import GameLeaderboard from "../components/GameLeaderboard";
 import '../css/game.detail.css';
+import Navbarr from "../components/navbar";
 
 class GameDetail extends Component {
     render(){
