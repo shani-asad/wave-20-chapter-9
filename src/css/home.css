@@ -4,6 +4,7 @@
   background-image: url("../../public/assets/main-bg.jpg");
   background-size: 100% 100%;
   height: 870px;
+  margin-top: -95px;
 }
 
 .mainScreenTwo {
@@ -11,6 +12,7 @@
   background-size: 100% 100%;
   height: 870px;
   position: relative;
+  margin-top: 90px;
 }
 
 .mainScreenThree {
@@ -47,30 +49,6 @@
   background-size: 100% 100%;
   height: 870px;
   position: relative;
-}
-
-/* Navbar */
-.navHeader {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 90px;
-  opacity: 50%;
-}
-
-.navTextColor {
-  color: white !important;
-}
-
-.navFontText {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-.navFontSizeLogo {
-  font-size: 24px;
-}
-
-.navFontSize {
-  font-size: 12px;
 }
 
 /* Halaman 1 */
@@ -259,6 +237,10 @@
 }
 
 /* Halaman Kelima */
+
+.logoBox {
+  margin-left: 350px;
+}
 
 .textOnePageFive {
   color: white;
