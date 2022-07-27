@@ -24,7 +24,7 @@ class GameCardDetail extends Component {
     }
 
     render() {
-        const {isAuthenticated}  = this.state
+        const { isAuthenticated } = this.state
         let button;
         console.log(isAuthenticated)
 
