@@ -56,7 +56,7 @@ const GameCarousel = (args) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} className='w-100' />
+        <img src={item.src} alt={item.altText} className='w-100 img-fluid' />
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
